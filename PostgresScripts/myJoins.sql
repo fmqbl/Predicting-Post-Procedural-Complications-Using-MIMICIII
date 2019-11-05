@@ -32,4 +32,4 @@ inner join services ss on ss.hadm_id = a.hadm_id
 inner join patients pp on pp.subject_id = a.subject_id
 inner join diagnoses_seq6 gg on gg.hadm_id = a.hadm_id
 
-where gg.seq_num = 1
+where gg.seq_num = 1 -- and gg.icd9_class in ('E87','V58','E93','E88','V10','V45','V49','E91','E94','E84','E00')
