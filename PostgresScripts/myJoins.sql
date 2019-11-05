@@ -14,6 +14,7 @@ ss.prev_service,
 ss.curr_service,
 pp.dob,
 pp.gender,
+gg.seq_num,
 gg.icd9_class
 
 from admissions a
@@ -30,3 +31,5 @@ inner join
 inner join services ss on ss.hadm_id = a.hadm_id
 inner join patients pp on pp.subject_id = a.subject_id
 inner join diagnoses_seq6 gg on gg.hadm_id = a.hadm_id
+
+where gg.seq_num = 1
