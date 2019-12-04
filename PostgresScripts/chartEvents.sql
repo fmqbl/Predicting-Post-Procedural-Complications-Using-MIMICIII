@@ -1,0 +1,1 @@
+\copy CHARTEVENTS from 'D:\DataScience\MimicDataset\CHARTEVENTS.csv' delimiter ',' csv header NULL ''
