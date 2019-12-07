@@ -658,35 +658,6 @@ COMMENT ON COLUMN MICROBIOLOGYEVENTS.DILUTION_VALUE is
 COMMENT ON COLUMN MICROBIOLOGYEVENTS.INTERPRETATION is
    'Interpretation of the test.';
 
---------------
---NOTEEVENTS--
---------------
-
--- Table
-COMMENT ON TABLE NOTEEVENTS IS
-   'Notes associated with hospital stays.';
-
--- Columns
-COMMENT ON COLUMN NOTEEVENTS.ROW_ID is
-   'Unique row identifier.';
-COMMENT ON COLUMN NOTEEVENTS.SUBJECT_ID is
-   'Foreign key. Identifies the patient.';
-COMMENT ON COLUMN NOTEEVENTS.HADM_ID is
-   'Foreign key. Identifies the hospital stay.';
-COMMENT ON COLUMN NOTEEVENTS.CHARTDATE is
-   'Date when the note was charted.';
-COMMENT ON COLUMN NOTEEVENTS.CHARTTIME is
-   'Date and time when the note was charted. Note that some notes (e.g. discharge summaries) do not have a time associated with them: these notes have NULL in this column.';
-COMMENT ON COLUMN NOTEEVENTS.CATEGORY is
-   'Category of the note, e.g. Discharge summary.';
-COMMENT ON COLUMN NOTEEVENTS.DESCRIPTION is
-   'A more detailed categorization for the note, sometimes entered by free-text.';
-COMMENT ON COLUMN NOTEEVENTS.CGID is
-   'Foreign key. Identifies the caregiver.';
-COMMENT ON COLUMN NOTEEVENTS.ISERROR is
-   'Flag to highlight an error with the note.';
-COMMENT ON COLUMN NOTEEVENTS.TEXT is
-   'Content of the note.';
 
 ------------
 --PATIENTS--
