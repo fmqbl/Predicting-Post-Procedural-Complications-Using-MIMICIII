@@ -21,7 +21,7 @@
    as explained in the README file
 */
 
-
+-- Multiple other tables also created on runtime using CTEs but below are few initial tables scripts
 --------------------------------------------------------
 --  DDL for Table ADMISSIONS
 --------------------------------------------------------
