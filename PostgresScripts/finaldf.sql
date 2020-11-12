@@ -1,3 +1,4 @@
+-- To composite the final data frame, following sql (postgresql) code is used. comment added to track the changes and validate on the new system
 select 
 a.subject_id,
 a.hadm_id,
